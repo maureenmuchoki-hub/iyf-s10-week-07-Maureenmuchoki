@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: blueviolet;
+}
+
+/* Center layout, centering container*/
+.wrapper {
+    display: flex; /*ativates flexbox*/
+    justify-content: center; /*Centers content horizontally*/
+    align-items: center; /*Centers content vertically*/
+    height: 100vh;
+}
+
+/* Main box */
+.card {
+    background: rgba(255, 255, 255, 0.85); /*White with some transparency*/
+    backdrop-filter: blur(10px); /*Blurs the background behind the card*/
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 25px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center; /*Centers text inside*/
+}
+
+/* Title */
+h1 {
+    margin: 0;
+    color: #3a7bd5;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: none;
+    border-color: #3a7bd5;
+    box-shadow: 0 0 5px rgba(58, 123, 213, 0.3);
+}
+
+#total-count {
+    color: #3a7bd5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#active-count {
+    color: #3a7bd5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#completed-count {
+    color: #3a7bd5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #3a7bd5;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #2f69c0;
+}
+
+/* Filters */
+.filters {
+    margin: 15px 0;
+}
+
+.filters button {
+    background: transparent;
+    color: #003b44;
+    border: 1px solid #3a7bd5;
+    margin: 0 5px;
+}
+
+.filters .active {
+    background: #3a7bd5;
+    color: white;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Checkbox + text alignment */
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Completed task */
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Clear button */
+.clear {
+    margin-top: 15px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #003b44;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.clear:hover {
+    background: #3a7bd5;
+    transform: scale(1.02);
+}
+
+.clear:active {
+    transform: scale(0.98);
+}
